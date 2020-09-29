@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <a class="navbar-brand logo" href="index.html">
+                    Corona Test
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="ml-auto p-2 bd-highlight" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " onclick="createlist(records)" href="records.html">Records</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container loading">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title">Welcome to the Corona virus detection app !!</h1>
+        <h6 class="title subtitle">Let us know your symptomps and get to know if you need to test or not !!</h6>
+
+
+        <div class=" container body">
+            <div class=" container inputpanel first">
+                <h2>Enter your details :</h2>
+                <form>
+                    <label>Name : <input class="name" type="text"></label>
+                    <br>
+                    <label>Age : <input class="age" type="number">Years</label>
+
+                    <br>
+                    <label>Sex :</label>
+                    <label class="radio-inline sex"><input type="radio" name="optradio" class="sexvalue" value="Male">
+                        Male</label>
+                    <label class="radio-inline sex"><input type="radio" name="optradio" class="sexvalue" value="Female">
+                        Female</label>
+                    <label class="radio-inline sex"><input type="radio" name="optradio" class="sexvalue" value="Other">
+                        Other</label>
+                    <br>
+                    <label>Temperature : <input class="temperature" type="number"> <sup>0</sup>C</label>
+
+                </form>
+            </div>
+
+            <div class=" container symptomps">
+                <div class="inputpanel symptomps1">
+                    <h2>Select symptomps if you have any :</h2>
+                    <form>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp" name="symp1" value="1"> Breathing problem</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp" name="symp1" value="1"> Dry cough</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp" name="symp1" value="1"> Sore throat</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp" name="symp1" value="1"> Weakness</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp" name="symp1" value="1"> Runny nose</label>
+                        </div>
+
+
+                    </form>
+                </div>
+
+                <div class="vrline"></div>
+
+                <div class="inputpanel symptomps2">
+                    <h2>Additional symptomps if you have any :</h2>
+                    <form>
+
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Abdominal pain</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Vomiting </label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Diarrhoea </label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Chest pain or
+                                pressure</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Muscle pain </label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Loss of taste or
+                                smel</label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Rash on skin, or
+                                discoloration of fingers
+                                or toe </label>
+                        </div>
+                        <div class="checkbox disabled">
+                            <label><input type="checkbox" class="symp2" name="symp2" value="2"> Loss of speech or
+                                movement
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="text-center submit">
+                <button type="button" class="btn btn-success subbtn">Submit</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    
+
+    <footer class="container">
+        <h3 class="disclaimer">Disclaimer</h3>
+        <hr>
+        <p>“This COVID-19 Self Assessment System is only for software development purpose and may not yield actual
+            result. Any information given by users of this system will not be disclosed or store to anywhere.” </p>
+    </footer>
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCR-L0lBwD1EuEOizqQvRiaCCcP9Aw_O70",
+            authDomain: "corona-49514.firebaseapp.com",
+            databaseURL: "https://corona-49514.firebaseio.com",
+            projectId: "corona-49514",
+            storageBucket: "corona-49514.appspot.com",
+            messagingSenderId: "74945120330",
+            appId: "1:74945120330:web:69b4e51f43219539f9beb3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+nav{
+    background-image: linear-gradient(to right,rgb(236, 163, 163),rgb(233, 233, 130)) !important;
+}
+
+nav a{
+    font-size: 20px;
+    padding-left: 20px !important;
+    
+}
+.logo{
+    font-size: 30px !important;
+    color: brown !important;
+}
+.loading{
+    text-align: center;
+}
+.title{
+    margin: 10px;
+    text-align: center;
+    
+    padding: 10px;
+}
+.subtitle{
+    margin-bottom: 20px;
+}
+.inputpanel{
+    margin-bottom: 100px;
+    background-image: linear-gradient(to right,cyan,rgb(201, 162, 175));
+    padding: 5%;
+    border-radius: 8px;
+}
+.first h2{
+    text-align: center;
+}
+
+.sex{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.age{
+    width: 80px;
+    margin: 10px;
+    padding: 5px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    padding-right: 5px;
+}
+form{
+    padding: 10px;
+    width: 100%;
+    margin: 20px;
+}
+.symptomps1 form{
+        padding: 10px;
+        width: 90%;
+        margin: 20px;
+
+}
+.symptomps2 form{
+
+    padding: 10px;
+    width: 90%;
+    margin: 20px;
+
+}
+.symptomps{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+}
+.disclaimer{
+    text-align: center;
+    color: red;
+}
+
+p{
+    text-align: center;
+}
+footer{
+    margin-top: 50px;
+}
+.records h2{
+    text-align: center;
+    margin: 100px;
+}
+.init{
+    background-color: black;
+    color: cornsilk;
+}
